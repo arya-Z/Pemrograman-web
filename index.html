@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMP Negeri Karang Gading</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo smp.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        body {
+            margin-top: 80px;
+            font-family: 'Segoe UI', sans-serif;
+
+        }
+
+        .navbar-custom {
+            background-color: #004d66;
+            border: none;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav>li>a {
+            color: #c7c7c7;
+            margin-right: 30px;
+            font-weight: 700;
+        }
+
+        .navbar-custom .navbar-nav>li>a:hover,
+        .navbar-custom .navbar-brand:hover {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        .navbar-toggle .icon-bar {
+            background-color: white;
+            /* agar hamburger terlihat */
+            margin-top: 5px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .navbar-brand {
+            padding: 5px 15px;
+            height: 20px;
+            line-height: 40px;
+        }
+        .carousel-inner {
+            margin-top: -60px;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .carousel-caption h3 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-caption p {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section.bg-light {
+            background: #f9f9f9;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: #337ab7;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .card i {
+            font-size: 40px;
+            color: #337ab7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .card:hover i {
+            color: white;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .stat-box h2 {
+            font-size: 36px;
+            color: #337ab7;
+            margin-bottom: 5px;
+        }
+
+        .stat-box i {
+            font-size: 30px;
+            color: #337ab7;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .news-card {
+            min-height: 460px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-card .content {
+            padding: 15px;
+        }
+
+        .media-left img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            .news-row .col-sm-3:nth-child(4n+1) {
+                clear: left;
+            }
+        }
+
+        .carousel-caption h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-caption p {
+            color: #fff;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/smp karang gading.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                    <li><a href="jadwal.html">Jadwal</a></li>
+                    <li><a href="karyawan.html">Karyawan</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- AWAL SLIDER -->
+    <div class="carousel slide" id="contoh-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#contoh-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#contoh-carousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/slider1.jpeg" width="100%" alt=" content 1">
+                <div class="carousel-caption">
+                    <h3>MPLS 2023</h3>
+                    <p>Membangun Karakteristik Siswa/Siswi</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/slider2.jpeg" width="100%" alt="content 2">
+                <div class="carousel-caption">
+                    <h3>Diskusi Bersama Dosmpem</h3>
+                    <p>Mengarahkan Siswa/i untuk berkembang lagi di masa yang akan datang</p>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#contoh-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+            <a class="right carousel-control" href="#contoh-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- AKHIR SLIDER -->
+
+    <!-- Keunggulan -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center wow fadeInUp">Keunggulan Sekolah</h2>
+            <hr style="width: 80px; border: 2px solid #337ab7; margin: 10px auto 40px;">
+            <div class="row">
+                <div class="col-sm-4 wow zoomIn">
+                    <div class="card">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h4>Guru Profesional</h4>
+                        <p>Tenaga pendidik berpengalaman dan kompeten.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow zoomIn" data-wow-delay="0.2s">
+                    <div class="card">
+                        <i class="fa fa-book"></i>
+                        <h4>Kurikulum Nasional</h4>
+                        <p>Kurikulum berbasis karakter dan kreativitas.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow zoomIn" data-wow-delay="0.4s">
+                    <div class="card">
+                        <i class="fa fa-leaf"></i>
+                        <h4>Lingkungan Nyaman</h4>
+                        <p>Lingkungan sekolah yang asri dan kondusif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Singkat -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center wow fadeInUp">Informasi Singkat Sekolah</h2>
+            <hr style="width: 80px; border: 2px solid #337ab7; margin: 10px auto 40px;">
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <div class="stat-box wow fadeInUp">
+                        <i class="fa fa-users"></i>
+                        <h2 class="counter" data-count="40">0</h2>
+                        <p>Guru</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="stat-box wow fadeInUp" data-wow-delay="0.2s">
+                        <i class="fa fa-child"></i>
+                        <h2 class="counter" data-count="600">0</h2>
+                        <p>Siswa</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="stat-box wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa fa-building"></i>
+                        <h2 class="counter" data-count="30">0</h2>
+                        <p>Ruang Kelas</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="stat-box wow fadeInUp" data-wow-delay="0.6s">
+                        <i class="fa fa-trophy"></i>
+                        <h2 class="counter" data-count="15">0</h2>
+                        <p>Prestasi Nasional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Terbaru -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center wow fadeInUp">Berita Terbaru</h2>
+            <hr style="width: 80px; border: 2px solid #337ab7; margin: 10px auto 40px;">
+            <div class="row news-row">
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="news-card">
+                        <img src="assets/alamak.jpeg" alt="">
+                        <div class="content">
+                            <h4>MPLS</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>01 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Kegiatan MPLS siswa baru sukses dilaksanakan dengan semangat tinggi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="news-card">
+                        <img src="assets/workshop.jpeg" alt="">
+                        <div class="content">
+                            <h4>WorkShop</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>02 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Workshop guru inovatif menghadirkan pemateri nasional di bidang pendidikan.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="news-card">
+                        <img src="assets/Lomba Cerdas Cermat _Surabaya Tourism Destination Award_ @IHTB_UC.jpeg" alt="">
+                        <div class="content">
+                            <h4>Cerdas Cermat</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>03 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>SMPN Karang Gading meraih juara 1 lomba cerdas cermat tingkat kabupaten.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="news-card">
+                        <img src="assets/pelatihan.jpeg" alt="">
+                        <div class="content">
+                            <h4>Pelatihan Siswa/i</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>08 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Pelatihan literasi digital bagi siswa dilaksanakan selama dua hari penuh.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="news-card">
+                        <img src="assets/lab kptr.jpeg" alt="">
+                        <div class="content">
+                            <h4>Lab komputer</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>10 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Peresmian laboratorium komputer baru oleh kepala dinas pendidikan setempat.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="news-card">
+                        <img src="assets/kebersihan.jpeg" alt="">
+                        <div class="content">
+                            <h4>Lomba Kebersihan</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>11 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Lomba kebersihan antar kelas menciptakan lingkungan belajar yang asri.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="news-card">
+                        <img src="assets/perpus.jpeg" alt="">
+                        <div class="content">
+                            <h4>Perpustakaan Digital</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>13 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Launching perpustakaan digital menambah semangat membaca siswa.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="news-card">
+                        <img src="assets/SMP pentas seni tari.jpeg" alt="">
+                        <div class="content">
+                            <h4>Pentas Seni</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>15 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Pentas seni tahunan menampilkan kreativitas luar biasa dari siswa SMPN.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="news-card">
+                        <img src="assets/psikolog.jpeg" alt="">
+                        <div class="content">
+                            <h4>Sosialisasi</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>20 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Sosialisasi kesehatan mental remaja oleh tim puskesmas kecamatan.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="1.0s">
+                    <div class="news-card">
+                        <img src="assets/Kegiatan mentoring pilar pelatihan guru SBB.jpeg" alt="">
+                        <div class="content">
+                            <h4>Monitoting Guru</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>21 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Guru-guru ikuti pelatihan platform pembelajaran digital terbaru.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 11 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="news-card">
+                        <img src="assets/studitour.jpeg" alt="">
+                        <div class="content">
+                            <h4>Studitour</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>22 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Siswa kelas 9 melaksanakan kunjungan edukatif ke museum kota.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="1.2s">
+                    <div class="news-card">
+                        <img src="assets/coding.jpeg" alt="">
+                        <div class="content">
+                            <h4>Belajar Mengoding</h4>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/FotoKepsek.jpeg" alt="Penulis">
+                                </div>
+                                <div class="media-body">
+                                    <p class="text-muted"><small>25 Juli 2025 oleh Muhammad Yusra</small></p>
+                                </div>
+                            </div>
+                            <p>Sekolah perkuat literasi digital melalui pelatihan coding dasar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer Full Full -->
+    <footer style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 SMP Negeri Karang Gading. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        function animateCounters() {
+            $('.counter').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({ countNum: 0 }).animate({
+                    countNum: countTo
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
+            });
+        }
+
+        let animated = false;
+        $(window).on('scroll', function () {
+            const statOffset = $('.stat-box').first().offset().top - window.innerHeight + 100;
+            if (!animated && $(window).scrollTop() > statOffset) {
+                animateCounters();
+                animated = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

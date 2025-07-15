@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SMP Negeri Karang Gading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/logo smp.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <style>
+    body {
+      margin-top: 80px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: #004d66;
+      border: none;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav>li>a {
+      color: #c7c7c7;
+      margin-right: 30px;
+      font-weight: 700;
+    }
+
+    .navbar-custom .navbar-nav>li>a:hover,
+    .navbar-custom .navbar-brand:hover {
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: white;
+      /* agar hamburger terlihat */
+      margin-top: 5px;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .navbar-brand {
+      padding: 5px 15px;
+      height: 20px;
+      line-height: 40px;
+    }
+    .hero {
+      height: 100vh;
+      background: url('assets/tentang\ kami.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -30px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .card {
+      position: relative;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      color: white;
+    }
+
+    .card i {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #337ab7;
+      transition: color 0.3s;
+      z-index: 2;
+      position: relative;
+    }
+
+    .card h3,
+    .card p,
+    .card ul {
+      position: relative;
+      z-index: 2;
+      transition: color 0.3s;
+    }
+
+    /* Efek air */
+    .card::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: 50%;
+      left: 50%;
+      background: rgba(51, 122, 183, 0.3);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.6s ease-out, opacity 0.6s ease;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .card:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    .card:hover {
+      background-color: #337ab7;
+    }
+
+    .card:hover i,
+    .card:hover h3,
+    .card:hover p,
+    .card:hover ul li {
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/smp karang gading.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="karyawan.html">Karyawan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="content">
+      <h1 class="wow fadeInDown">Selamat Datang di SMP Negeri Karang Gading</h1>
+      <p class="lead wow fadeInUp">Menjadi Sekolah Unggul, Religius, dan Berbudaya</p>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="section wow fadeInUp" id="tentang">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-center wow fadeInUp" style="color: black;">Tentang kami</h2>
+        <hr style="width: 80px; border: 2px solid #337ab7; margin: 10px auto 40px;">
+        <p class="lead">SMP Negeri Karang Gading adalah institusi pendidikan yang berkomitmen pada pengembangan potensi
+          siswa secara holistik.</p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.1s">
+            <i class="fa fa-university"></i>
+            <h3>Profil Sekolah</h3>
+            <p>SMPN Karang Gading berdiri sejak tahun 1990 dan telah meluluskan ribuan siswa berkualitas yang
+              melanjutkan pendidikan ke jenjang yang lebih tinggi.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fa fa-eye"></i>
+            <h3>Visi</h3>
+            <p>Menjadi sekolah unggulan dalam prestasi, karakter, dan kepedulian terhadap lingkungan serta nilai-nilai
+              budaya lokal.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.3s">
+            <i class="fa fa-bullseye"></i>
+            <h3>Misi</h3>
+            <ul class="text-left">
+              <li>Menanamkan nilai keagamaan sejak dini.</li>
+              <li>Mendorong kreativitas dan berpikir kritis.</li>
+              <li>Mewujudkan sekolah yang ramah anak dan bersih.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.4s">
+            <i class="fa fa-history"></i>
+            <h3>Sejarah</h3>
+            <p>Didirikan dari semangat gotong royong masyarakat Karang Gading, sekolah ini terus tumbuh menjadi tempat
+              pendidikan unggulan dengan semangat lokal.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.5s">
+            <i class="fa fa-building"></i>
+            <h3>Fasilitas</h3>
+            <p>SMPN Karang Gading memiliki ruang kelas modern, lab IPA dan komputer, lapangan olahraga, serta ruang
+              ibadah representatif.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card wow fadeInUp" data-wow-delay="0.6s">
+            <i class="fa fa-trophy"></i>
+            <h3>Prestasi</h3>
+            <p>Juara 1 Lomba Cerdas Cermat Provinsi 2023, Juara 2 Futsal antar SMP, dan penghargaan Sekolah Adiwiyata
+              Mandiri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Full Full -->
+  <footer style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 SMP Negeri Karang Gading. All rights reserved.</p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+</body>
+
+</html>

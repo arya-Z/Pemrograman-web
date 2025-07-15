@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami - SMP Negeri Karang Gading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo smp.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar-custom {
+            background-color: #004d66;
+            border: none;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav>li>a {
+            color: #c7c7c7;
+            margin-right: 30px;
+            font-weight: 700;
+        }
+
+        .navbar-custom .navbar-nav>li>a:hover,
+        .navbar-custom .navbar-brand:hover {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        .navbar-toggle .icon-bar {
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .navbar-brand {
+            padding: 5px 15px;
+            height: 20px;
+            line-height: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            display: none;
+        }
+
+        .table-container.active {
+            display: block;
+        }
+
+        .table {
+            width: 100% !important;
+        }
+
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/smp karang gading.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                    <li><a href="jadwal.html">Jadwal</a></li>
+                    <li><a href="karyawan.html">Karyawan</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <div class="container-fluid">
+        <h2>JADWAL PELAJARAN SMP NEGERI KARANG GADING<br>TAHUN PELAJARAN 2025/2026</h2>
+
+        <div class="form-group no-print">
+            <label>Pilih Hari:</label>
+            <select class="form-control"
+                onchange="document.querySelectorAll('.table-container').forEach(t=>t.classList.remove('active'));document.getElementById(this.value).classList.add('active');">
+                <option value="Senin">Senin</option>
+                <option value="Selasa">Selasa</option>
+                <option value="Rabu">Rabu</option>
+                <option value="Kamis">Kamis</option>
+                <option value="Jumat">Jumat</option>
+                <option value="Sabtu">Sabtu</option>
+            </select>
+        </div>
+
+        <!-- Jadwal per hari (Senin - Sabtu) -->
+        <!-- GUNAKAN KONTEN TABEL YANG SUDAH ADA TANPA DIUBAH -->
+
+        <!-- Senin -->
+        <div id="Senin" class="table-container active">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Matematika</td>
+                        <td>IPA</td>
+                        <td>Bahasa Inggris</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>Bahasa Inggris</td>
+                        <td>Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PPKn</td>
+                        <td>Seni Budaya</td>
+                        <td>IPA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Selasa -->
+        <div id="Selasa" class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>IPS</td>
+                        <td>Penjaskes</td>
+                        <td>Bahasa Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bahasa Inggris</td>
+                        <td>IPA</td>
+                        <td>Agama</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Seni Budaya</td>
+                        <td>Matematika</td>
+                        <td>PPKn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Rabu -->
+        <div id="Rabu" class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Agama</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>IPS</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>IPA</td>
+                        <td>PPKn</td>
+                        <td>Seni Budaya</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Penjaskes</td>
+                        <td>Agama</td>
+                        <td>Bahasa Inggris</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Kamis -->
+        <div id="Kamis" class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>IPS</td>
+                        <td>Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Matematika</td>
+                        <td>Bahasa Inggris</td>
+                        <td>IPA</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PPKn</td>
+                        <td>Penjaskes</td>
+                        <td>Agama</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Jumat -->
+        <div id="Jumat" class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Penjaskes</td>
+                        <td>Matematika</td>
+                        <td>PPKn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kegiatan Keagamaan</td>
+                        <td>Kegiatan Keagamaan</td>
+                        <td>Kegiatan Keagamaan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sabtu -->
+        <div id="Sabtu" class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jam Ke</th>
+                        <th>Kelas 7</th>
+                        <th>Kelas 8</th>
+                        <th>Kelas 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bahasa Inggris</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>IPS</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ekskul</td>
+                        <td>Ekskul</td>
+                        <td>Ekskul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tambahan -->
+        <hr>
+        <h3>📢 Pengumuman Ujian</h3>
+        <div class="alert alert-warning">
+            Ujian Tengah Semester (UTS) akan dilaksanakan mulai <strong>Senin, 15 Juli 2025</strong>.
+            Seluruh siswa diharapkan hadir tepat waktu dan membawa perlengkapan belajar lengkap.
+        </div>
+
+        <h3>📎 Unduh Jadwal PDF</h3>
+        <p>Untuk kemudahan cetak dan penyimpanan, jadwal pelajaran dapat diunduh dalam format PDF:</p>
+        <a href="jadwal-smp-2025.pdf" class="btn btn-primary no-print" target="_blank">📥 Download Jadwal PDF</a>
+
+        <h3>🖨️ Cetak Halaman</h3>
+        <p>Klik tombol berikut untuk mencetak halaman ini langsung dari browser:</p>
+        <button onclick="window.print()" class="btn btn-default no-print">🖨️ Cetak Jadwal</button>
+    </div>
+
+    <footer style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 SMP Negeri Karang Gading. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

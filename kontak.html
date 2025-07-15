@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak Kami - SMP Negeri Karang Gading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/logo smp.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin-top: 80px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: #004d66;
+      border: none;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav>li>a {
+      color: #c7c7c7;
+      margin-right: 30px;
+      font-weight: 700;
+    }
+
+    .navbar-custom .navbar-nav>li>a:hover,
+    .navbar-custom .navbar-brand:hover {
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: white;
+      /* agar hamburger terlihat */
+      margin-top: 5px;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .navbar-brand {
+      padding: 5px 15px;
+      height: 20px;
+      line-height: 40px;
+    }
+
+    .info-section {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .btn-kirim {
+      background-color: #337ab7;
+      color: white;
+      border: none;
+    }
+
+    .btn-kirim:hover {
+      background-color: #286090;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #337ab7;
+    }
+
+    @media (max-width: 767px) {
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/smp karang gading.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="karyawan.html">Karyawan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 info-section">
+        <h4><strong>Informasi Sekolah</strong></h4>
+        <h4 class="text-primary"><strong>SMP Negeri Karang Gading</strong></h4>
+        <p><i class="fa fa-map-marker"></i> Jl. Pendidikan No. 10, Karang Gading, Sumatera Utara</p>
+        <p><i class="fa fa-phone"></i> (061) 1234567</p>
+        <p><i class="fa fa-envelope"></i> <a href="mailto:smpkaranggading@gmail.com">smpkaranggading@gmail.com</a></p>
+        <p><i class="fa fa-clock-o"></i> Senin - Jumat, 07.00 - 15.00 WIB</p>
+      </div>
+
+      <!-- Form Kirim Pesan -->
+      <div class="col-md-6">
+        <h4><strong>Kirim Pesan</strong></h4>
+        <form>
+          <input type="text" class="form-control" placeholder="Nama Lengkap">
+          <input type="email" class="form-control" placeholder="Alamat Email">
+          <input type="text" class="form-control" placeholder="Subjek">
+          <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+          <button type="submit" class="btn btn-kirim">Kirim</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Peta Lokasi -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h4><strong>Lokasi Kami</strong></h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15957.839357209794!2d99.48904445!3d3.5671737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031b7b37c7fa20b%3A0x787cb1e6a7aa8fa5!2sKarang%20Gading%2C%20Labuhan%20Deli%2C%20Deli%20Serdang%20Regency%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1625200000000"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Ikon Sosial Media -->
+    <div class="row">
+      <div class="col-xs-12 social-icons">
+        <h4><strong>Ikuti Kami</strong></h4>
+        <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer Full Full -->
+  <footer style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 SMP Negeri Karang Gading. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
